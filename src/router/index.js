@@ -4,6 +4,7 @@ import Home from '@/components/Home'
 import Detail from '@/components/Detail'
 import Film from '@/components/Film/Film'
 import Shop from '@/components/Shop'
+import Cinema from '@/components/Cinema/Cinema'
 
 Vue.use(Router)
 
@@ -29,6 +30,12 @@ export default new Router({
       path: '/Shop',
       name: 'Shop',
       component: Shop,
+      props: true
+    },
+    {
+      path: '/Cinema',
+      name: 'Cinema',
+      component: Cinema,
       props: true
     },
   ]
